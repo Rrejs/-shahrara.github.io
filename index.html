@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>شهرآرا | تبلیغات محیطی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <img src="logo.png" class="logo" alt="Shahrara">
+    <div class="lang">
+      <button onclick="setLang('fa')">FA</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="fa">
+    <h1>شهرآرا</h1>
+    <p>
+      شهرآرا فعال در حوزه تبلیغات محیطی شامل بیلبورد، تلویزیون شهری،
+      استرابورد، لمپوست و رول‌آپ در سطح شهر می‌باشد.
+    </p>
+
+    <h2>تماس با ما</h2>
+    <p>
+      تلفن: 0912XXXXXXX<br>
+      ایمیل: info@shahrara.ir
+    </p>
+  </section>
+
+  <section id="en" class="hidden">
+    <h1>Shahrara</h1>
+    <p>
+      Shahrara operates in outdoor advertising including billboards,
+      urban TV displays, lamppost ads, and roll‑ups.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+      Phone: +98 912 XXXXXXX<br>
+      Email: info@shahrara.ir
+    </p>
+  </section>
+</main>
+
+<script>
+function setLang(lang) {
+  document.getElementById('fa').classList.add('hidden');
+  document.getElementById('en').classList.add('hidden');
+  document.getElementById(lang).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
